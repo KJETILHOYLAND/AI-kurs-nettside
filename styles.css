@@ -1,0 +1,114 @@
+/* Generell stil for hele nettsiden */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f4f8; /* Myk, profesjonell grå */
+    color: #1f2a41; /* Dyp marineblå for tekst */
+    line-height: 1.6;
+}
+
+/* Stil for overskrifter (h1, h2, etc.) */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1f2a41; /* Dyp marineblå for overskrifter */
+}
+
+/* Header-seksjonen */
+header {
+    background: #1f2a41; /* Dyp marineblå bakgrunn */
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    display: flex; /* Aktiverer Flexbox */
+    flex-direction: column; /* Standardvisning for mobil: stable på toppen av hverandre */
+    align-items: center; /* Midtstiller elementene horisontalt */
+}
+
+/* Stil for logo-bildet */
+.logo {
+    height: 80px; /* Setter størrelsen på logoen */
+    margin-bottom: 1.5rem; /* Avstand under logoen på mobil */
+}
+
+/* Navigasjonsmenyen */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00a78e; /* Rolig, profesjonell teal-farge ved hover */
+}
+
+/* Medieforespørsel for store skjermer (PC) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Viser elementene side-ved-side på PC */
+        justify-content: space-between; /* Fordeler plassen mellom elementene */
+        padding: 2rem;
+    }
+
+    .logo {
+        margin-bottom: 0; /* Fjerner avstanden under logoen på PC */
+    }
+}
+
+/* Hovedinnhold-seksjonen */
+.main-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Stil for hero-figuren på forsiden */
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+/* Stilen for knappen ("Se våre kurs") */
+.button {
+    background: #00a78e; /* Rolig teal-farge for knappen */
+    color: #fff;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.button:hover {
+    background: #008f77; /* Mørkere nyanse av teal ved hover */
+}
+
+/* Footer-seksjonen */
+footer {
+    background: #1f2a41;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
